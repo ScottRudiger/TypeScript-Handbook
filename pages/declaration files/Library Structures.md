@@ -133,10 +133,10 @@ Many popular Node.js libraries are in the module family, such as [`express`](htt
 
 A *UMD* module is one that can *either* be used as module (through an import), or as a global (when run in an environment without a module loader).
 Many popular libraries, such as [Moment.js](http://momentjs.com/), are written this way.
-For example, in Node.js or using RequireJS, you would write:
+For example, in Node.js or using CommonJS, you would write:
 
 ```ts
-import moment = require("moment");
+var moment = require("moment");
 console.log(moment.format());
 ```
 
